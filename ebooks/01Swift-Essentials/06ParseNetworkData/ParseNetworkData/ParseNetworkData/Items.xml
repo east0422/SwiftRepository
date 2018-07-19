@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items>
+    <title>xmltitleout1</title>
+    <content>xmlcontentout1</content>
+    <title>xmltitleout2</title>
+    <content>xmlcontentout2</content>
+    <item>
+        <title>xmltitle1</title>
+        <content>xmlcontent1</content>
+    </item>
+    <item>
+        <title>xmltitle2</title>
+        <content>xmlcontent2</content>
+    </item>
+    <item title="xmltitle3" content="xmlcontent3"/>
+</items>
