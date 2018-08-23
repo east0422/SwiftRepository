@@ -1,12 +1,9 @@
 # swift
 	study swift
-	
+
 ## Demos
 * common and classic demo.
 
 ## Ebooks
-* read ebook, add note and related demo.
-
-
-
+* read ebook, add note and related demo.	
 
