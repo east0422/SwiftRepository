@@ -14,6 +14,11 @@
 		45CDE2D42133E6C300EE796A /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45CDE2D32133E6C300EE796A /* Profile.storyboard */; };
 		45CDE2D82133E7F000EE796A /* Discovery.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45CDE2D72133E7F000EE796A /* Discovery.storyboard */; };
 		45CDE2DA2133F03E00EE796A /* Message.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45CDE2D92133F03E00EE796A /* Message.storyboard */; };
+		45CDE2DE2133F77800EE796A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CDE2DD2133F77800EE796A /* MainViewController.swift */; };
+		45CDE2E02133F79500EE796A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CDE2DF2133F79500EE796A /* HomeViewController.swift */; };
+		45CDE2E22133F7A500EE796A /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CDE2E12133F7A500EE796A /* MessageViewController.swift */; };
+		45CDE2E42133F7BD00EE796A /* DiscoveryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CDE2E32133F7BD00EE796A /* DiscoveryViewController.swift */; };
+		45CDE2E62133F7CC00EE796A /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CDE2E52133F7CC00EE796A /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +32,11 @@
 		45CDE2D32133E6C300EE796A /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		45CDE2D72133E7F000EE796A /* Discovery.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Discovery.storyboard; sourceTree = "<group>"; };
 		45CDE2D92133F03E00EE796A /* Message.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Message.storyboard; sourceTree = "<group>"; };
+		45CDE2DD2133F77800EE796A /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		45CDE2DF2133F79500EE796A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		45CDE2E12133F7A500EE796A /* MessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
+		45CDE2E32133F7BD00EE796A /* DiscoveryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoveryViewController.swift; sourceTree = "<group>"; };
+		45CDE2E52133F7CC00EE796A /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +71,11 @@
 			isa = PBXGroup;
 			children = (
 				45A2034F212EF99B00E67E39 /* AppDelegate.swift */,
+				45CDE2DD2133F77800EE796A /* MainViewController.swift */,
+				45CDE2DF2133F79500EE796A /* HomeViewController.swift */,
+				45CDE2E12133F7A500EE796A /* MessageViewController.swift */,
+				45CDE2E32133F7BD00EE796A /* DiscoveryViewController.swift */,
+				45CDE2E52133F7CC00EE796A /* ProfileViewController.swift */,
 				45A20353212EF99B00E67E39 /* Main.storyboard */,
 				45CDE2D02133E67B00EE796A /* Home.storyboard */,
 				45CDE2D92133F03E00EE796A /* Message.storyboard */,
@@ -146,7 +161,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45CDE2E62133F7CC00EE796A /* ProfileViewController.swift in Sources */,
 				45A20350212EF99B00E67E39 /* AppDelegate.swift in Sources */,
+				45CDE2DE2133F77800EE796A /* MainViewController.swift in Sources */,
+				45CDE2E22133F7A500EE796A /* MessageViewController.swift in Sources */,
+				45CDE2E02133F79500EE796A /* HomeViewController.swift in Sources */,
+				45CDE2E42133F7BD00EE796A /* DiscoveryViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,7 +319,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.east.DynamicCoding;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "${TARGET_NAME}";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -318,7 +338,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.east.DynamicCoding;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "${TARGET_NAME}";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
