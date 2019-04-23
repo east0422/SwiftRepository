@@ -23,4 +23,7 @@ The original code is: [https://github.com/mattneub/Programming-iOS-Book-Examples
 * Layers can be combined within a single view(A UIView’s partner layer can contain additional layers. Since the purpose of layers is to draw, portraying visible material on the screen, this allows a UIView’s drawing to be composited of multiple distinct pieces. This can make drawing easier, with the constituents of a drawing being treated as objects).
 * Layers are the basis of animation(Animation allows you to add clarity, emphasis, and just plain coolness to your interface. Layers are made to be animated; the “CA” in “CALayer” stands for “Core Animation” ).
 
+## 04. Animation
+* Animation is the visible change of an attribute over time. The changing attribute might be positional: something moves or changes size. But other kinds of attribute can animate as well(eg background color and so on).
+
 
