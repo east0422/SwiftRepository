@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4535C3E0232F34B5002CC555 /* GuideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4535C3DF232F34B5002CC555 /* GuideViewController.swift */; };
+		4535C3E2232F3508002CC555 /* Guide.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4535C3E1232F3508002CC555 /* Guide.storyboard */; };
 		4568C4F022C0B799000BE666 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4568C4EF22C0B799000BE666 /* AppDelegate.swift */; };
 		4568C4F922C0B79C000BE666 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4568C4F822C0B79C000BE666 /* Assets.xcassets */; };
 		4568C50822C0BEA9000BE666 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4568C50722C0BEA9000BE666 /* HomePageViewController.swift */; };
@@ -33,6 +35,8 @@
 
 /* Begin PBXFileReference section */
 		01A635E58C890EFC77F003B8 /* Pods-HappyShopping001.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HappyShopping001.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HappyShopping001/Pods-HappyShopping001.debug.xcconfig"; sourceTree = "<group>"; };
+		4535C3DF232F34B5002CC555 /* GuideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideViewController.swift; sourceTree = "<group>"; };
+		4535C3E1232F3508002CC555 /* Guide.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Guide.storyboard; sourceTree = "<group>"; };
 		4568C4EC22C0B799000BE666 /* HappyShopping001.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HappyShopping001.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4568C4EF22C0B799000BE666 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4568C4F822C0B79C000BE666 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -135,6 +139,8 @@
 				45E5CD0022C4580700CFE815 /* MineItemCell.xib */,
 				45A811B322C6173F003186EA /* QueryDetailViewController.swift */,
 				45A811B522C6174D003186EA /* QueryDetail.storyboard */,
+				4535C3DF232F34B5002CC555 /* GuideViewController.swift */,
+				4535C3E1232F3508002CC555 /* Guide.storyboard */,
 			);
 			path = HomeTab;
 			sourceTree = "<group>";
@@ -240,6 +246,7 @@
 				45E5CCFA22C3CC5300CFE815 /* Mine.storyboard in Resources */,
 				4568C51622C0C049000BE666 /* Login.storyboard in Resources */,
 				45E5CCF422C3AA3100CFE815 /* Home.storyboard in Resources */,
+				4535C3E2232F3508002CC555 /* Guide.storyboard in Resources */,
 				45A811B622C6174D003186EA /* QueryDetail.storyboard in Resources */,
 				45E5CD0222C4580700CFE815 /* MineItemCell.xib in Resources */,
 			);
@@ -295,6 +302,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				459E30C522C0C82600FD243C /* BaseViewController.swift in Sources */,
+				4535C3E0232F34B5002CC555 /* GuideViewController.swift in Sources */,
 				4568C51222C0C001000BE666 /* LoginViewController.swift in Sources */,
 				4568C50822C0BEA9000BE666 /* HomePageViewController.swift in Sources */,
 				4568C51422C0C024000BE666 /* RegisterViewController.swift in Sources */,

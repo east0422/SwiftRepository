@@ -53,6 +53,7 @@
                     </view>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
+                        <outlet property="btn" destination="iRQ-Tk-dTq" id="5xS-Ld-vLE"/>
                         <outlet property="resultTextView" destination="qLT-yM-lYL" id="nxQ-ZD-KWN"/>
                     </connections>
                 </viewController>
