@@ -12,17 +12,13 @@ import MJRefresh
 
 class CouponViewController: BaseViewController, UISearchBarDelegate, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var searchBar: UISearchBar!
-    @IBOutlet weak var scrollView: UIScrollView! // 顶部tab标签
     @IBOutlet weak var tableView: UITableView!
     
     var coupons:[CouponModel] = []
-    var curBtn: UIButton? = nil
     var pageNo: Int = 1
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        self.initViews()
         
         // 添加顶部下拉刷新
         tableView.mj_header = MJRefreshNormalHeader.init(refreshingBlock: {
@@ -44,44 +40,6 @@ class CouponViewController: BaseViewController, UISearchBarDelegate, UITableView
         tableView.register(couponItemCellNib, forCellReuseIdentifier: "couponitemcellid")
         
         tableView.addGestureRecognizer(UITapGestureRecognizer.init(target: self, action: #selector(dismissKeyboard)))
-    }
-    
-    func initViews() {
-        let tabs:[String] = ["淘宝优惠券", "京东优惠券"]
-        let width =  (SCREEN_WIDTH / CGFloat(tabs.count)) // 80
-        for (index, title) in tabs.enumerated() {
-            let button = UIButton.init(frame: CGRect.init(x: CGFloat(index) * width , y: 0, width: width, height: 40))
-            button.setTitle(title, for: UIControl.State.normal)
-            // 默认第一个按钮选中
-            if (index == 0) {
-                button.isSelected = true
-                curBtn = button
-            }
-            // 设置按钮选中和未选中标题颜色
-            button.setTitleColor(UIColor.blue, for: UIControl.State.selected)
-            button.setTitleColor(UIColor.black, for: UIControl.State.normal)
-            button.tag = (index + 1)
-            button.addTarget(self, action: #selector(tabChanged(btn:)), for: UIControl.Event.touchUpInside)
-            scrollView.addSubview(button)
-        }
-        
-        // 滚动区域，当前不需要滚动
-//        scrollView.contentSize = CGSize.init(width: CGFloat(tabs.count) * width, height: 40)
-    }
-    
-    // 顶部tab点击
-    @objc func tabChanged(btn: UIButton) {
-        dismissKeyboard()
-        
-        if (btn == curBtn) {
-            return
-        }
-        btn.isSelected = true
-        curBtn?.isSelected = false
-        curBtn = btn
-        
-        pageNo = 1
-        searchCoupons()
     }
     
     // UITableViewDataSource
@@ -117,8 +75,7 @@ class CouponViewController: BaseViewController, UISearchBarDelegate, UITableView
     }
 
     func searchCoupons() {
-        let type = curBtn?.tag
-        Api.queryCouponList(type: type!, pageNo: pageNo, keyword: searchBar.text) { (resp, error) in
+        Api.queryCouponList(type: 1, pageNo: pageNo, keyword: searchBar.text) { (resp, error) in
             let couponList = resp?.value(forKey: "data") as? Array<NSDictionary>
             // 返回优惠券数组不为空
             if (self.pageNo == 1) { // 等于1切换type或关键字搜索，大于1时表示上拉加载更多
