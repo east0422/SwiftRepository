@@ -17,10 +17,8 @@ class RootViewController: UITabBarController {
         tabBar.barTintColor = UIColor.white
     
         let homeVC = UIStoryboard.init(name: "Home", bundle: nil).instantiateViewController(withIdentifier: "HomeStoryboardId")
-//        let couponVC = UIStoryboard.init(name: "Coupon", bundle: nil).instantiateViewController(withIdentifier: "CouponStoryboardId")
         let mineVC = UIStoryboard.init(name: "Mine", bundle: nil).instantiateViewController(withIdentifier: "MineStoryboardId")
         addChildVC(homeVC, childTitle: "首页", imageName: "home")
-//        addChildVC(couponVC, childTitle: "优惠券", imageName: "coupon")
         addChildVC(mineVC, childTitle: "个人中心", imageName: "mine")
     }
     
@@ -28,8 +26,6 @@ class RootViewController: UITabBarController {
     private func addChildVC(_ childVC: UIViewController, childTitle: String, imageName: String) {
         childVC.title = childTitle
         childVC.tabBarItem.image = UIImage.init(named: imageName)
-//        childVC.tabBarItem.selectedImage = UIImage.init(named: imageName + "_selected")
-        
         addChild(UINavigationController.init(rootViewController: childVC))
     }
 }

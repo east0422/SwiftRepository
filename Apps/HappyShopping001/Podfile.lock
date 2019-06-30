@@ -14,39 +14,25 @@ PODS:
   - AFNetworking/Serialization (3.2.1)
   - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
-  - MJRefresh (3.1.15.7)
-  - SDWebImage (4.4.2):
-    - SDWebImage/Core (= 4.4.2)
-  - SDWebImage/Core (4.4.2)
   - SVProgressHUD (2.2.5)
-  - SWRevealViewController (2.3.0)
   - Toast-Swift (4.0.1)
 
 DEPENDENCIES:
   - AFNetworking (~> 3.2.1)
-  - MJRefresh (~> 3.1.15.7)
-  - SDWebImage (~> 4.4.2)
   - SVProgressHUD (~> 2.2.5)
-  - SWRevealViewController (~> 2.3.0)
   - Toast-Swift (~> 4.0.1)
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - AFNetworking
-    - MJRefresh
-    - SDWebImage
     - SVProgressHUD
-    - SWRevealViewController
     - Toast-Swift
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
-  MJRefresh: 697f8ec75ebdbe9207767bb682cf0f51b0d8a41f
-  SDWebImage: 624d6e296c69b244bcede364c72ae0430ac14681
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
-  SWRevealViewController: 6d3fd97f70112fd7cef9de14df4260eacce4c63a
   Toast-Swift: e42a638589a2f95036b4bb7626cfbdde7daf0393
 
-PODFILE CHECKSUM: 2d101e00b3b13ce66d03c4c211aea54985953fd6
+PODFILE CHECKSUM: abd36822d2f679e96c6c16d88696cdab627b25ed
 
 COCOAPODS: 1.9.2

@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import SWRevealViewController
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -17,15 +16,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        
-//        // 抽屉效果
-//        let leftVC = UINavigationController.init(rootViewController: LeftViewController.init())
-//        let centerVC = UINavigationController.init(rootViewController: CenterViewController.init())
-//        let rightVC = UINavigationController.init(rootViewController: RightViewController.init())
-//
-//        let rootVC = SWRevealViewController.init(rearViewController: leftVC, frontViewController: centerVC)
-//        rootVC?.rightViewController = rightVC
-//        rootVC?.setFrontViewPosition(FrontViewPosition.left, animated: true)
         
         // 登录视图
         let loginVC = UIStoryboard.init(name: "Login", bundle: nil).instantiateViewController(withIdentifier: "LoginStoryboardId")

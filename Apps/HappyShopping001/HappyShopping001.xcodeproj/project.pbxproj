@@ -7,21 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4531E9EE22C883BE00706194 /* NewbieGuideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4531E9ED22C883BE00706194 /* NewbieGuideViewController.swift */; };
-		4531E9F022C883F900706194 /* NewbieGuide.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4531E9EF22C883F900706194 /* NewbieGuide.storyboard */; };
-		454D3C6422C2670E007D234D /* Coupon.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 454D3C6322C2670E007D234D /* Coupon.storyboard */; };
 		4568C4F022C0B799000BE666 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4568C4EF22C0B799000BE666 /* AppDelegate.swift */; };
 		4568C4F922C0B79C000BE666 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4568C4F822C0B79C000BE666 /* Assets.xcassets */; };
 		4568C50822C0BEA9000BE666 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4568C50722C0BEA9000BE666 /* HomePageViewController.swift */; };
-		4568C50A22C0BECD000BE666 /* CouponViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4568C50922C0BECD000BE666 /* CouponViewController.swift */; };
 		4568C50C22C0BEE9000BE666 /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4568C50B22C0BEE9000BE666 /* MineViewController.swift */; };
 		4568C51222C0C001000BE666 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4568C51122C0C001000BE666 /* LoginViewController.swift */; };
 		4568C51422C0C024000BE666 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4568C51322C0C024000BE666 /* RegisterViewController.swift */; };
 		4568C51622C0C049000BE666 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4568C51522C0C049000BE666 /* Login.storyboard */; };
 		459E30BA22C0C0E700FD243C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459E30B922C0C0E700FD243C /* Constants.swift */; };
-		459E30C122C0C79B00FD243C /* LeftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459E30BE22C0C79B00FD243C /* LeftViewController.swift */; };
-		459E30C222C0C79B00FD243C /* RightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459E30BF22C0C79B00FD243C /* RightViewController.swift */; };
-		459E30C322C0C79B00FD243C /* CenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459E30C022C0C79B00FD243C /* CenterViewController.swift */; };
 		459E30C522C0C82600FD243C /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459E30C422C0C82600FD243C /* BaseViewController.swift */; };
 		459E30C722C0C8AB00FD243C /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459E30C622C0C8AB00FD243C /* RootViewController.swift */; };
 		459E30CA22C10AFE00FD243C /* UITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459E30C922C10AFE00FD243C /* UITextField+Extension.swift */; };
@@ -31,35 +24,25 @@
 		45A811B622C6174D003186EA /* QueryDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45A811B522C6174D003186EA /* QueryDetail.storyboard */; };
 		45A811B822C62430003186EA /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A811B722C62430003186EA /* UIView+Extension.swift */; };
 		45E5CCF422C3AA3100CFE815 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45E5CCF322C3AA3100CFE815 /* Home.storyboard */; };
-		45E5CCF722C3BBE400CFE815 /* CouponItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E5CCF522C3BBE400CFE815 /* CouponItemCell.swift */; };
-		45E5CCF822C3BBE400CFE815 /* CouponItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45E5CCF622C3BBE400CFE815 /* CouponItemCell.xib */; };
 		45E5CCFA22C3CC5300CFE815 /* Mine.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45E5CCF922C3CC5300CFE815 /* Mine.storyboard */; };
 		45E5CD0122C4580700CFE815 /* MineItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E5CCFF22C4580700CFE815 /* MineItemCell.swift */; };
 		45E5CD0222C4580700CFE815 /* MineItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45E5CD0022C4580700CFE815 /* MineItemCell.xib */; };
-		45E82B7022C5202B00BE2FF6 /* CouponModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E82B6F22C5202B00BE2FF6 /* CouponModel.swift */; };
 		45E82B7222C5204400BE2FF6 /* UserInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E82B7122C5204400BE2FF6 /* UserInfoModel.swift */; };
 		D53A59E07D96AD6961DC7E6F /* Pods_HappyShopping001.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1568CEEDC85A69D2C1187A5 /* Pods_HappyShopping001.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		01A635E58C890EFC77F003B8 /* Pods-HappyShopping001.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HappyShopping001.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HappyShopping001/Pods-HappyShopping001.debug.xcconfig"; sourceTree = "<group>"; };
-		4531E9ED22C883BE00706194 /* NewbieGuideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewbieGuideViewController.swift; sourceTree = "<group>"; };
-		4531E9EF22C883F900706194 /* NewbieGuide.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NewbieGuide.storyboard; sourceTree = "<group>"; };
-		454D3C6322C2670E007D234D /* Coupon.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Coupon.storyboard; sourceTree = "<group>"; };
 		4568C4EC22C0B799000BE666 /* HappyShopping001.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HappyShopping001.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4568C4EF22C0B799000BE666 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4568C4F822C0B79C000BE666 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4568C4FD22C0B79C000BE666 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4568C50722C0BEA9000BE666 /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
-		4568C50922C0BECD000BE666 /* CouponViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CouponViewController.swift; sourceTree = "<group>"; };
 		4568C50B22C0BEE9000BE666 /* MineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
 		4568C51122C0C001000BE666 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		4568C51322C0C024000BE666 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		4568C51522C0C049000BE666 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		459E30B922C0C0E700FD243C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		459E30BE22C0C79B00FD243C /* LeftViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftViewController.swift; sourceTree = "<group>"; };
-		459E30BF22C0C79B00FD243C /* RightViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RightViewController.swift; sourceTree = "<group>"; };
-		459E30C022C0C79B00FD243C /* CenterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CenterViewController.swift; sourceTree = "<group>"; };
 		459E30C422C0C82600FD243C /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		459E30C622C0C8AB00FD243C /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		459E30C922C10AFE00FD243C /* UITextField+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extension.swift"; sourceTree = "<group>"; };
@@ -69,12 +52,9 @@
 		45A811B522C6174D003186EA /* QueryDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = QueryDetail.storyboard; sourceTree = "<group>"; };
 		45A811B722C62430003186EA /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		45E5CCF322C3AA3100CFE815 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
-		45E5CCF522C3BBE400CFE815 /* CouponItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CouponItemCell.swift; sourceTree = "<group>"; };
-		45E5CCF622C3BBE400CFE815 /* CouponItemCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CouponItemCell.xib; sourceTree = "<group>"; };
 		45E5CCF922C3CC5300CFE815 /* Mine.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Mine.storyboard; sourceTree = "<group>"; };
 		45E5CCFF22C4580700CFE815 /* MineItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineItemCell.swift; sourceTree = "<group>"; };
 		45E5CD0022C4580700CFE815 /* MineItemCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MineItemCell.xib; sourceTree = "<group>"; };
-		45E82B6F22C5202B00BE2FF6 /* CouponModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CouponModel.swift; sourceTree = "<group>"; };
 		45E82B7122C5204400BE2FF6 /* UserInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoModel.swift; sourceTree = "<group>"; };
 		E1568CEEDC85A69D2C1187A5 /* Pods_HappyShopping001.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HappyShopping001.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC376C74ABAF8DF62A61210B /* Pods-HappyShopping001.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HappyShopping001.release.xcconfig"; path = "Pods/Target Support Files/Pods-HappyShopping001/Pods-HappyShopping001.release.xcconfig"; sourceTree = "<group>"; };
@@ -122,7 +102,6 @@
 			isa = PBXGroup;
 			children = (
 				459E30C822C10A0D00FD243C /* Extensions */,
-				459E30BD22C0C79B00FD243C /* Reveal */,
 				4568C50622C0BE68000BE666 /* Login */,
 				4568C50522C0BE61000BE666 /* Network */,
 				4568C50422C0BE55000BE666 /* HomeTab */,
@@ -138,7 +117,6 @@
 		4568C50322C0BE49000BE666 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				45E82B6F22C5202B00BE2FF6 /* CouponModel.swift */,
 				45E82B7122C5204400BE2FF6 /* UserInfoModel.swift */,
 			);
 			path = Models;
@@ -150,19 +128,13 @@
 				459E30C622C0C8AB00FD243C /* RootViewController.swift */,
 				459E30C422C0C82600FD243C /* BaseViewController.swift */,
 				4568C50722C0BEA9000BE666 /* HomePageViewController.swift */,
-				4568C50922C0BECD000BE666 /* CouponViewController.swift */,
 				4568C50B22C0BEE9000BE666 /* MineViewController.swift */,
 				45E5CCF922C3CC5300CFE815 /* Mine.storyboard */,
-				454D3C6322C2670E007D234D /* Coupon.storyboard */,
 				45E5CCF322C3AA3100CFE815 /* Home.storyboard */,
-				45E5CCF522C3BBE400CFE815 /* CouponItemCell.swift */,
-				45E5CCF622C3BBE400CFE815 /* CouponItemCell.xib */,
 				45E5CCFF22C4580700CFE815 /* MineItemCell.swift */,
 				45E5CD0022C4580700CFE815 /* MineItemCell.xib */,
 				45A811B322C6173F003186EA /* QueryDetailViewController.swift */,
 				45A811B522C6174D003186EA /* QueryDetail.storyboard */,
-				4531E9ED22C883BE00706194 /* NewbieGuideViewController.swift */,
-				4531E9EF22C883F900706194 /* NewbieGuide.storyboard */,
 			);
 			path = HomeTab;
 			sourceTree = "<group>";
@@ -184,16 +156,6 @@
 				4568C51522C0C049000BE666 /* Login.storyboard */,
 			);
 			path = Login;
-			sourceTree = "<group>";
-		};
-		459E30BD22C0C79B00FD243C /* Reveal */ = {
-			isa = PBXGroup;
-			children = (
-				459E30BE22C0C79B00FD243C /* LeftViewController.swift */,
-				459E30BF22C0C79B00FD243C /* RightViewController.swift */,
-				459E30C022C0C79B00FD243C /* CenterViewController.swift */,
-			);
-			path = Reveal;
 			sourceTree = "<group>";
 		};
 		459E30C822C10A0D00FD243C /* Extensions */ = {
@@ -275,10 +237,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4568C4F922C0B79C000BE666 /* Assets.xcassets in Resources */,
-				454D3C6422C2670E007D234D /* Coupon.storyboard in Resources */,
-				45E5CCF822C3BBE400CFE815 /* CouponItemCell.xib in Resources */,
 				45E5CCFA22C3CC5300CFE815 /* Mine.storyboard in Resources */,
-				4531E9F022C883F900706194 /* NewbieGuide.storyboard in Resources */,
 				4568C51622C0C049000BE666 /* Login.storyboard in Resources */,
 				45E5CCF422C3AA3100CFE815 /* Home.storyboard in Resources */,
 				45A811B622C6174D003186EA /* QueryDetail.storyboard in Resources */,
@@ -335,27 +294,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				45E5CCF722C3BBE400CFE815 /* CouponItemCell.swift in Sources */,
 				459E30C522C0C82600FD243C /* BaseViewController.swift in Sources */,
 				4568C51222C0C001000BE666 /* LoginViewController.swift in Sources */,
 				4568C50822C0BEA9000BE666 /* HomePageViewController.swift in Sources */,
 				4568C51422C0C024000BE666 /* RegisterViewController.swift in Sources */,
 				459E30C722C0C8AB00FD243C /* RootViewController.swift in Sources */,
-				459E30C222C0C79B00FD243C /* RightViewController.swift in Sources */,
-				459E30C122C0C79B00FD243C /* LeftViewController.swift in Sources */,
 				459E30CC22C1AAF700FD243C /* HTTPManager.swift in Sources */,
-				4568C50A22C0BECD000BE666 /* CouponViewController.swift in Sources */,
 				45A811B422C6173F003186EA /* QueryDetailViewController.swift in Sources */,
 				4568C4F022C0B799000BE666 /* AppDelegate.swift in Sources */,
 				459E30CA22C10AFE00FD243C /* UITextField+Extension.swift in Sources */,
 				4568C50C22C0BEE9000BE666 /* MineViewController.swift in Sources */,
 				45E5CD0122C4580700CFE815 /* MineItemCell.swift in Sources */,
-				4531E9EE22C883BE00706194 /* NewbieGuideViewController.swift in Sources */,
 				45A811B822C62430003186EA /* UIView+Extension.swift in Sources */,
 				45E82B7222C5204400BE2FF6 /* UserInfoModel.swift in Sources */,
-				459E30C322C0C79B00FD243C /* CenterViewController.swift in Sources */,
 				459E30CE22C1ADFC00FD243C /* Api.swift in Sources */,
-				45E82B7022C5202B00BE2FF6 /* CouponModel.swift in Sources */,
 				459E30BA22C0C0E700FD243C /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -11,10 +11,7 @@ import UIKit
 class MineViewController: BaseViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var tableView: UITableView!
     
-    let mineItems = [["基本资料"],
-                     ["邀请列表", "余额信息", "我的订单", "我要提现"],
-                     ["新人引导"]
-                    ]
+    let mineItems = ["基本资料", "邀请列表", "余额信息", "我的订单", "我要提现"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,7 +39,7 @@ class MineViewController: BaseViewController, UITableViewDelegate, UITableViewDa
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return mineItems[section].count
+        return 1
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -67,7 +64,6 @@ class MineViewController: BaseViewController, UITableViewDelegate, UITableViewDa
             cell = self.tableView.dequeueReusableCell(withIdentifier: "mineitemcellid")
             cell?.selectionStyle = UITableViewCell.SelectionStyle.none
             let userInfo = UserInfoModel.fetchUserInfo()
-//            (cell as! MineItemCell).avatarImageView.image = UIImage.init(named: "avatar")
             (cell as! MineItemCell).usernameLabel.text = userInfo?.mobile ?? "用户名"
             let sign = userInfo?.sign
             var nickname = "昵称"
@@ -81,7 +77,7 @@ class MineViewController: BaseViewController, UITableViewDelegate, UITableViewDa
                 cell = UITableViewCell.init(style: UITableViewCell.CellStyle.default, reuseIdentifier: "minitemdefaultcellid")
                 cell?.accessoryType = UITableViewCell.AccessoryType.disclosureIndicator
             }
-            cell?.textLabel?.text = mineItems[indexPath.section][indexPath.row]
+            cell?.textLabel?.text = mineItems[indexPath.section]
         }
         
         return cell!
@@ -89,8 +85,8 @@ class MineViewController: BaseViewController, UITableViewDelegate, UITableViewDa
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         // 跳转
-        if (indexPath.section == 1) {
-            let msg = ["邀请", "余额", "订单", "提现"][indexPath.row]
+        if (indexPath.section > 0) {
+            let msg = ["邀请", "余额", "订单", "提现"][indexPath.section - 1]
             Api.queryMsg(msg: msg) { (resp, error) in
                 var resultMsg = "对不起，操作失败！"
                 if (error != nil) {
@@ -107,10 +103,6 @@ class MineViewController: BaseViewController, UITableViewDelegate, UITableViewDa
                 detailVC.copyMsg = resultMsg
                 self.navigationController?.pushViewController(detailVC, animated: true)
             }
-            
-        } else if (indexPath.section == 2) {
-            let newbieGuideVC = UIStoryboard.init(name: "NewbieGuide", bundle: nil).instantiateViewController(withIdentifier: "NewbieGuideStoryboardId") as! NewbieGuideViewController
-            self.navigationController?.pushViewController(newbieGuideVC, animated: true)
         }
     }
     
