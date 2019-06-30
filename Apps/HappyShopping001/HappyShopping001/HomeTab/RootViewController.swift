@@ -17,10 +17,10 @@ class RootViewController: UITabBarController {
         tabBar.barTintColor = UIColor.white
     
         let homeVC = UIStoryboard.init(name: "Home", bundle: nil).instantiateViewController(withIdentifier: "HomeStoryboardId")
-        let couponVC = UIStoryboard.init(name: "Coupon", bundle: nil).instantiateViewController(withIdentifier: "CouponStoryboardId")
+//        let couponVC = UIStoryboard.init(name: "Coupon", bundle: nil).instantiateViewController(withIdentifier: "CouponStoryboardId")
         let mineVC = UIStoryboard.init(name: "Mine", bundle: nil).instantiateViewController(withIdentifier: "MineStoryboardId")
         addChildVC(homeVC, childTitle: "首页", imageName: "home")
-        addChildVC(couponVC, childTitle: "优惠券", imageName: "coupon")
+//        addChildVC(couponVC, childTitle: "优惠券", imageName: "coupon")
         addChildVC(mineVC, childTitle: "个人中心", imageName: "mine")
     }
     
