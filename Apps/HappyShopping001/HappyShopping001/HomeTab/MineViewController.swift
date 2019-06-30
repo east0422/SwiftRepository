@@ -11,7 +11,7 @@ import UIKit
 class MineViewController: BaseViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var tableView: UITableView!
     
-    let mineItems = ["基本资料", "邀请列表", "余额信息", "我的订单", "我要提现"]
+    let mineItems = ["基本资料", "邀请列表", "余额信息", "我的订单"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -86,7 +86,7 @@ class MineViewController: BaseViewController, UITableViewDelegate, UITableViewDa
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         // 跳转
         if (indexPath.section > 0) {
-            let msg = ["邀请", "余额", "订单", "提现"][indexPath.section - 1]
+            let msg = ["邀请", "余额", "订单"][indexPath.section - 1]
             Api.queryMsg(msg: msg) { (resp, error) in
                 var resultMsg = "对不起，操作失败！"
                 if (error != nil) {

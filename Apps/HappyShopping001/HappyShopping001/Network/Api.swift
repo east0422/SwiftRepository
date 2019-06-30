@@ -41,16 +41,4 @@ class Api {
             callback(resp, error)
         }
     }
-    
-    // 查询优惠券
-    static func queryCouponList(type: Int, pageNo: Int, keyword: String?, callback:@escaping requestCallack) {
-        let params = ["type": type,
-                      "page_no": pageNo,
-                      "words": keyword == nil ? "" : keyword!
-                    ] as [String : Any]
-        
-        HTTPManager.shareInstance.request(method: RequestMethod.GET, url: "http://localhost/quanapi/index.php", params: params) { (resp, error) in
-            callback(resp, error)
-        }
-    }
 }
