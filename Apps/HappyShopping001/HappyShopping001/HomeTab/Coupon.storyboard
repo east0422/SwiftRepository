@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Coupon View Controller-->
+        <scene sceneID="fma-B7-vO4">
+            <objects>
+                <viewController storyboardIdentifier="CouponStoryboardId" id="o5r-qh-5CE" customClass="CouponViewController" customModule="HappyShopping001" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" id="gcV-6p-9Mc">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceHorizontal="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hki-OM-zCJ">
+                                <rect key="frame" x="0.0" y="120" width="320" height="40"/>
+                            </scrollView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="UkP-Ha-kaW">
+                                <rect key="frame" x="0.0" y="157" width="320" height="362"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <sections/>
+                                <connections>
+                                    <outlet property="dataSource" destination="o5r-qh-5CE" id="rVB-Rb-4rQ"/>
+                                    <outlet property="delegate" destination="o5r-qh-5CE" id="xtI-S7-nUV"/>
+                                </connections>
+                            </tableView>
+                            <searchBar contentMode="redraw" placeholder="请输入搜索关键字" translatesAutoresizingMaskIntoConstraints="NO" id="SRm-EI-oUr">
+                                <rect key="frame" x="0.0" y="64" width="320" height="56"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="search"/>
+                                <scopeButtonTitles>
+                                    <string>Title</string>
+                                    <string>Title</string>
+                                </scopeButtonTitles>
+                                <connections>
+                                    <outlet property="delegate" destination="o5r-qh-5CE" id="4Rh-kZ-5Mo"/>
+                                </connections>
+                            </searchBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Hki-OM-zCJ" firstAttribute="leading" secondItem="UkP-Ha-kaW" secondAttribute="leading" id="5GM-uf-PQg"/>
+                            <constraint firstItem="SRm-EI-oUr" firstAttribute="trailing" secondItem="Hki-OM-zCJ" secondAttribute="trailing" id="F1l-pv-TEb"/>
+                            <constraint firstItem="Yg2-ra-Uta" firstAttribute="bottom" secondItem="Hki-OM-zCJ" secondAttribute="bottom" constant="359" id="N8E-eh-JyN"/>
+                            <constraint firstAttribute="trailing" secondItem="SRm-EI-oUr" secondAttribute="trailing" id="OFC-0M-AEV"/>
+                            <constraint firstItem="Hki-OM-zCJ" firstAttribute="top" secondItem="SRm-EI-oUr" secondAttribute="bottom" id="PPN-qZ-R4r"/>
+                            <constraint firstItem="SRm-EI-oUr" firstAttribute="leading" secondItem="gcV-6p-9Mc" secondAttribute="leading" id="c0k-Bk-pbx"/>
+                            <constraint firstItem="Hki-OM-zCJ" firstAttribute="trailing" secondItem="UkP-Ha-kaW" secondAttribute="trailing" id="c3J-rw-if0"/>
+                            <constraint firstItem="UkP-Ha-kaW" firstAttribute="bottom" secondItem="Yg2-ra-Uta" secondAttribute="bottom" id="ci2-8g-dKf"/>
+                            <constraint firstItem="SRm-EI-oUr" firstAttribute="leading" secondItem="Hki-OM-zCJ" secondAttribute="leading" id="gYb-m0-lQd"/>
+                            <constraint firstItem="SRm-EI-oUr" firstAttribute="top" secondItem="Yg2-ra-Uta" secondAttribute="top" id="hiu-gi-SNi"/>
+                            <constraint firstItem="UkP-Ha-kaW" firstAttribute="top" secondItem="SRm-EI-oUr" secondAttribute="bottom" constant="37" id="kis-FE-GqY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Yg2-ra-Uta"/>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="scrollView" destination="Hki-OM-zCJ" id="8XL-99-ywc"/>
+                        <outlet property="searchBar" destination="SRm-EI-oUr" id="Ea6-3X-582"/>
+                        <outlet property="tableView" destination="UkP-Ha-kaW" id="MZq-FO-iBa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ien-Hk-Raz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-378.75" y="-31.690140845070424"/>
+        </scene>
+    </scenes>
+</document>
