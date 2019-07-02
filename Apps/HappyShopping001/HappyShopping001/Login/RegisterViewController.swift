@@ -19,8 +19,9 @@ class RegisterViewController: UITableViewController, UITextFieldDelegate {
         
         reguserTxt.showToolBar()
         reginviterTxt.showToolBar()
+        
+        self.view.addGestureRecognizer(UITapGestureRecognizer.init(target: self, action: #selector(dismissKeyboard)))
     }
-    
     
     @IBAction func regClicked(_ sender: UIButton) {
         let regAccount = self.reguserTxt.text
@@ -47,7 +48,7 @@ class RegisterViewController: UITableViewController, UITextFieldDelegate {
             if (error == nil) { // 登录成功
                 let userInfo = resp?.value(forKey: "data") as? NSDictionary
                 if (userInfo != nil && (userInfo?.value(forKey: "exesis") as? Int != 1)) {
-                    let errorMsg = "对不起，登录失败:" + (userInfo?.value(forKey: "msg") as? String ?? "")
+                    let errorMsg = "对不起，注册失败:" + (userInfo?.value(forKey: "msg") as? String ?? "")
                     self.view.makeToast(errorMsg, position: ToastPosition.center)
                 } else {
                     UserInfoModel.saveUserInfo(userInfo: UserInfoModel.init(dict: userInfo!))
@@ -63,5 +64,11 @@ class RegisterViewController: UITableViewController, UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         return true
+    }
+    
+    // 关闭键盘
+    @objc func dismissKeyboard() {
+        reguserTxt.resignFirstResponder()
+        reginviterTxt.resignFirstResponder()
     }
 }

@@ -20,14 +20,9 @@ class HomePageViewController: BaseViewController, UISearchBarDelegate {
         resultTextView.layer.borderColor = UIColor.red.cgColor
         resultTextView.layer.borderWidth = 1.0
         resultTextView.layer.masksToBounds = true
+        
     }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        searchBar.text = ""
-        // 默认隐藏查询结果视图，显示背景图片，有查询结果再显示结果视图
-        resultView.isHidden = true
-    }
-    
+
     // UISearchBarDelegate
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         searchBar.resignFirstResponder()
@@ -57,6 +52,7 @@ class HomePageViewController: BaseViewController, UISearchBarDelegate {
     }
     
     @IBAction func clearBtnClicked(_ sender: UIButton) {
+        searchBar.text = ""
         resultTextView.text = ""
     }
 }

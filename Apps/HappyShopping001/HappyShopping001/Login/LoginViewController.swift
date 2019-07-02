@@ -18,6 +18,8 @@ class LoginViewController: UITableViewController, UITextFieldDelegate {
         
         // 数字键盘顶部显示自定义完成按钮
         usernameTxt.showToolBar()
+        
+        self.view.addGestureRecognizer(UITapGestureRecognizer.init(target: self, action: #selector(dismissKeyboard)))
     }
     
     @IBAction func loginClicked(_ sender: UIButton) {
@@ -59,5 +61,8 @@ class LoginViewController: UITableViewController, UITextFieldDelegate {
         return true
     }
     
-    
+    // 关闭键盘
+    @objc func dismissKeyboard() {
+        usernameTxt.resignFirstResponder()
+    }
 }

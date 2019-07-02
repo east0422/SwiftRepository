@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <searchBar contentMode="redraw" placeholder="请输入商品信息或订单号" translatesAutoresizingMaskIntoConstraints="NO" id="XoE-gG-LfW">
+                            <searchBar contentMode="redraw" placeholder="请粘贴宝贝信息或订单号" translatesAutoresizingMaskIntoConstraints="NO" id="XoE-gG-LfW">
                                 <rect key="frame" x="0.0" y="64" width="375" height="56"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="56" id="L5V-5C-xFa"/>
@@ -35,7 +35,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_bg" translatesAutoresizingMaskIntoConstraints="NO" id="Ksh-IL-bCP">
                                 <rect key="frame" x="0.0" y="120" width="375" height="498"/>
                             </imageView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="58m-GQ-lE0">
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="58m-GQ-lE0">
                                 <rect key="frame" x="0.0" y="120" width="375" height="498"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rvv-P2-N8P">

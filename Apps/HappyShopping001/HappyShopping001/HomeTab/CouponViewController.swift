@@ -42,6 +42,8 @@ class CouponViewController: BaseViewController, UISearchBarDelegate, UITableView
         // 注册couponitemCell
         let couponItemCellNib = UINib(nibName: "CouponItemCell", bundle: nil)
         tableView.register(couponItemCellNib, forCellReuseIdentifier: "couponitemcellid")
+        
+        tableView.addGestureRecognizer(UITapGestureRecognizer.init(target: self, action: #selector(dismissKeyboard)))
     }
     
     func initViews() {
@@ -69,6 +71,8 @@ class CouponViewController: BaseViewController, UISearchBarDelegate, UITableView
     
     // 顶部tab点击
     @objc func tabChanged(btn: UIButton) {
+        dismissKeyboard()
+        
         if (btn == curBtn) {
             return
         }
@@ -131,5 +135,10 @@ class CouponViewController: BaseViewController, UISearchBarDelegate, UITableView
                 self.tableView.mj_footer.resetNoMoreData()
             }
         }
+    }
+    
+    // 关闭键盘
+    @objc func dismissKeyboard() {
+        searchBar.resignFirstResponder()
     }
 }
