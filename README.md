@@ -8,6 +8,9 @@
 * read ebook, add note and related demo.
 
 ## Apps
-* some app
+* some app.
+
+## Notes
+* notes and related demo.
 
 
